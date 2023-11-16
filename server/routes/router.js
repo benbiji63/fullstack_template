@@ -1,9 +1,6 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/api',(req,res)=>{
-  
-})
+router.get('/', (req, res) => {});
 
-
-module.exports = router
+module.exports = router;

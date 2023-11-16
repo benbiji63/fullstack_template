@@ -14,12 +14,8 @@ const corsOption = {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors(corsOption));
-app.use('/',router);
+app.use('/', router);
 
-
-app.get('/api', (req, res) => {
-  console.log('hai');
-  res.json({ name: ['bb', 'aa'] });
-});
+app.get('/', (req, res) => {});
 
 const server = app.listen(PORT, () => console.log(`Server running in ${PORT}`));
